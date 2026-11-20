@@ -1,0 +1,45 @@
+[
+  {
+    "name": "find_endpoints",
+    "description": "Search the Health API endpoints list (AgentPopulation, snapshot 15 Nov 2026). Rows passed a keyless data call on last_tested and may not answer today.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Words matched against title, service and subcategory"
+        },
+        "country": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$",
+          "description": "Country code, for example US"
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20,
+          "default": 5
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "fetch_endpoint",
+    "description": "GET one URL returned by find_endpoints. Refuses URLs not in the list and does not follow redirects. Returns status, content type and the first 4,000 characters.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "url"
+      ]
+    }
+  }
+]

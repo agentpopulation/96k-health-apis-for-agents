@@ -1,0 +1,36 @@
+{
+  "name": "96k-health-apis-for-agents",
+  "old_name": "health-api-endpoints",
+  "new_name": "96k-health-apis-for-agents",
+  "url": "https://github.com/agentpopulation/96k-health-apis-for-agents",
+  "description": "96,866 health API endpoints that passed a keyless data call. For agent tools, apps, pipelines and evals. CSV, CC BY 4.0.",
+  "homepage": "https://agentpopulation.com/apis",
+  "topics": [
+    "api-endpoints",
+    "open-data",
+    "dataset",
+    "ai-agents",
+    "agent-tools",
+    "agentpopulation",
+    "health-data",
+    "public-health",
+    "hospitals",
+    "health-facilities",
+    "global-health",
+    "epidemiology",
+    "covid-19",
+    "mortality",
+    "vaccination",
+    "health-indicators"
+  ],
+  "release": {
+    "tag": "snapshot-2026-11-15",
+    "title": "Health API endpoints · snapshot 15 Nov 2026 · 96,866 endpoints",
+    "notesFile": "RELEASE_NOTES.md",
+    "manifest": "../_release/health-api-endpoints/release.json",
+    "assets": [
+      "../_release/health-api-endpoints/Health_API_Endpoints_AgentPopulation_Snapshot_2026-11-15.csv.gz",
+      "../_release/health-api-endpoints/SHA256SUMS.txt"
+    ]
+  }
+}

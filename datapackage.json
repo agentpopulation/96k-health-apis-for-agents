@@ -1,0 +1,202 @@
+{
+  "name": "96k-health-apis-for-agents",
+  "title": "Health API endpoints",
+  "description": "96,866 health API endpoints that passed a keyless data call, tested 11–15 Nov 2026 (IST). On the date in `last_tested` (IST), one GET to the URL, sent with no key, returned HTTP 2xx and a non-empty data body. HTML pages and empty results did not pass. The `format` column records what came back. This is a test result for that date, not a promise that the URL answers today. Licences, terms, rate limits, accuracy and freshness were not reviewed. Endpoints are URLs, not separate APIs; many share one service.",
+  "version": "2026.11.15",
+  "created": "2026-11-15T09:06:22+05:30",
+  "homepage": "https://agentpopulation.com",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "AgentPopulation",
+      "path": "https://agentpopulation.com",
+      "role": "author"
+    }
+  ],
+  "keywords": [
+    "api-endpoints",
+    "open-data",
+    "dataset",
+    "ai-agents",
+    "agent-tools",
+    "agentpopulation",
+    "health-data",
+    "public-health",
+    "hospitals",
+    "health-facilities",
+    "global-health",
+    "epidemiology",
+    "covid-19",
+    "mortality",
+    "vaccination",
+    "health-indicators"
+  ],
+  "resources": [
+    {
+      "name": "sample",
+      "path": "data/Health_API_Endpoints_AgentPopulation_Sample.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "1,000 rows of the pack",
+      "schema": {
+        "fields": [
+          {
+            "name": "url",
+            "type": "string",
+            "format": "uri",
+            "description": "The address that was tested"
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "description": "Station, dataset or feed name"
+          },
+          {
+            "name": "service",
+            "type": "string",
+            "description": "The service the endpoint belongs to; joins to the services file together with host"
+          },
+          {
+            "name": "host",
+            "type": "string",
+            "description": "Host name of the address"
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-2 code, or EU; empty when global or unknown"
+          },
+          {
+            "name": "category",
+            "type": "string",
+            "description": "Category of the endpoint"
+          },
+          {
+            "name": "subcategory",
+            "type": "string",
+            "description": "Left empty from the 15 Nov 2026 snapshot; kept so the columns stay the same"
+          },
+          {
+            "name": "format",
+            "type": "string",
+            "description": "What the test call returned: json, csv, geojson, xml, gtfs, zip, txt and so on"
+          },
+          {
+            "name": "tags",
+            "type": "string",
+            "description": "Tags separated by |"
+          },
+          {
+            "name": "last_tested",
+            "type": "date",
+            "description": "Date of the test call, YYYY-MM-DD (IST)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "services",
+      "path": "data/Health_API_Services_AgentPopulation.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "service",
+            "type": "string",
+            "description": "Service name"
+          },
+          {
+            "name": "host",
+            "type": "string",
+            "description": "Host name"
+          },
+          {
+            "name": "endpoints",
+            "type": "integer",
+            "description": "Endpoints of this service in this pack"
+          },
+          {
+            "name": "countries",
+            "type": "string",
+            "description": "Country codes of those endpoints, separated by |"
+          }
+        ]
+      }
+    },
+    {
+      "name": "endpoints",
+      "path": "https://github.com/agentpopulation/96k-health-apis-for-agents/releases/latest/download/Health_API_Endpoints_AgentPopulation_Snapshot_2026-11-15.csv.gz",
+      "format": "csv",
+      "compression": "gz",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "bytes": 4568210,
+      "hash": "sha256:625de757e759ff0b70bdac19f971e21a55532853d317d3e5b2d9a20e24ad6f8b",
+      "description": "The full list, 96,866 rows: a release download, not in the repository",
+      "schema": {
+        "fields": [
+          {
+            "name": "url",
+            "type": "string",
+            "format": "uri",
+            "description": "The address that was tested"
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "description": "Station, dataset or feed name"
+          },
+          {
+            "name": "service",
+            "type": "string",
+            "description": "The service the endpoint belongs to; joins to the services file together with host"
+          },
+          {
+            "name": "host",
+            "type": "string",
+            "description": "Host name of the address"
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "description": "ISO 3166-1 alpha-2 code, or EU; empty when global or unknown"
+          },
+          {
+            "name": "category",
+            "type": "string",
+            "description": "Category of the endpoint"
+          },
+          {
+            "name": "subcategory",
+            "type": "string",
+            "description": "Left empty from the 15 Nov 2026 snapshot; kept so the columns stay the same"
+          },
+          {
+            "name": "format",
+            "type": "string",
+            "description": "What the test call returned: json, csv, geojson, xml, gtfs, zip, txt and so on"
+          },
+          {
+            "name": "tags",
+            "type": "string",
+            "description": "Tags separated by |"
+          },
+          {
+            "name": "last_tested",
+            "type": "date",
+            "description": "Date of the test call, YYYY-MM-DD (IST)"
+          }
+        ]
+      }
+    }
+  ]
+}

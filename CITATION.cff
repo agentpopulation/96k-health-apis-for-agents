@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this list, please credit it as below."
+type: dataset
+title: "Health API endpoints"
+authors:
+  - name: AgentPopulation
+    website: "https://agentpopulation.com"
+version: "2026.11.15"
+date-released: 2026-11-15
+license: CC-BY-4.0
+url: "https://agentpopulation.com"
+repository: "https://github.com/agentpopulation/96k-health-apis-for-agents"
+abstract: "96,866 health API endpoints that passed a keyless data call, tested 11–15 Nov 2026 (IST)."
+keywords:
+  - api-endpoints
+  - open-data
+  - dataset
+  - ai-agents
+  - agent-tools
+  - agentpopulation
+  - health-data
+  - public-health
+  - hospitals
+  - health-facilities
+  - global-health
+  - epidemiology
+  - covid-19
+  - mortality
+  - vaccination
+  - health-indicators
